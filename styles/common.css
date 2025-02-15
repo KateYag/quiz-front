@@ -1,5 +1,26 @@
 
+body {
+    margin: 0;
+    font-family: "MuseoSansCyrl", sans-serif;
+    color: #333;
+}
+a {
+    color: #6933dc;
+}
 
+@font-face {
+    src: url("../static/fonts/MuseoSansCyrl.otf");
+    font-family: "MuseoSansCyrl";
+}
+@font-face {
+    src: url("../static/fonts/MuseoSansCyrl-700.ttf");
+    font-family: "MuseoSansCyrlBold";
+}
+
+.header {
+    padding: 42px 0 40px 0;
+    border-bottom: 1px solid #DCDCF3;
+}
 
 
 .container {
@@ -60,7 +81,13 @@ a.button {
     color: #e2dfe7;
     border: 1px solid #e2dfe7;
 }
-
+.footer {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #dcdcf3;
+    line-height: 16px;
+}
 .big-title {
     font-family: MuseoSansCyrlBold, sans-serif;
     font-size: 54px;
@@ -72,3 +99,26 @@ a.button {
     color: #6933dc;;
 }
 
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile-image {
+    margin-right: 5px;
+}
+.profile-user {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.profile-logout {
+    font-size: 12px;
+    line-height: 12px;
+}
